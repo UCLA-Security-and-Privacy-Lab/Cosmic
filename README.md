@@ -148,22 +148,20 @@ Docker images will be available soon to streamline the installation and setup pr
 1. **Data Collection**:
    - Extract privacy policy links from target websites
    - Download and process privacy policy documents
-   - Navigate and extract web forms using AI agents
 
 2. **Multimodal Analysis**:
-   - Convert privacy policies to structured format
    - Extract form elements using visual and HTML analysis
    - Align form elements between different representations
 
 3. **Fact Extraction**:
    - Extract consent request texts and data controllers
    - Identify form purposes and user actions
-   - Generate structured facts for compliance checking
+   - Generate structured facts for compliance checking (semantic facts)
+   - Base facts are from website source code
 
 4. **Compliance Checking**:
    - Apply formal logic rules to detect violations
-   - Generate comprehensive compliance reports
-   - Identify specific areas of non-compliance
+   - Generate compliance reports (i.e., which element goes wrong)
 
 ## Contact
 For any questions, please contact yinglee@ucla.edu.
