@@ -2,7 +2,7 @@
 
 ## Overview
 
-COSMIC is a research platform that combines web automation and formal logic-based compliance checking to provide analysis of online consent mechanisms (target at webforms) and GDPR compliance. 
+COSMIC is a tool that combines web automation and formal logic-based compliance checking to provide analysis of online consent mechanisms (target at webforms) and GDPR compliance. 
 
 ## Project Architecture
 
