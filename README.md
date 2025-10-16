@@ -68,15 +68,7 @@ cosmic/
 **Features**:
 - ⚖️ Datalog-based formal reasoning rules
 - 🔍 Automated violation detection
-- 📊 Comprehensive compliance reporting
-- 🎯 Multiple violation type detection
 
-**Key Violation Types**:
-- Real choice violations
-- Consent separation violations
-- Withdrawal mechanism violations
-- Data controller identification issues
-- Accessibility violations
 
 ## Quick Start
 
