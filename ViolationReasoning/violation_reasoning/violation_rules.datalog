@@ -1,0 +1,167 @@
+#include "declarations.datalog"
+#include "help_facts.datalog"
+#include "rules.datalog"
+#include "input.datalog"
+real_choice_1(P, EID) :- 
+    countUniquePurpose(1), uniquePurpose(P), countTextbox(1), element(EID, "textbox", _).
+
+real_choice_2(ID, P, EID) :- 
+    crt_action(ID, X), crt_sent_purpose(ID, P), action_element(ID, X, EID), element(EID, _, _).
+
+
+real_choice_3(ID, P, EID) :- 
+    crt_action(ID, _), crt_sent_purpose(ID, P), element(EID, E_type, ID), IsInSelectType(E_type);
+    crt_sent_purpose(ID, P), eid_sent_id(EID, _, ID), element(EID, E_type, _), IsInSelectType(E_type).
+
+real_choice_4(ID, P, EID) :- countButton(1), crt_action(ID, X), crt_sent_purpose(ID, P), suboperation("button", X), element(EID, "button", _).
+
+.decl real_choice_5(EID:symbol, purpose:symbol)
+real_choice_5(EID, P) :- crt_sent_purpose(ID, P), crt_neg(ID, neg), eid_sent_id(EID, _, ID), element(EID, E_type, _), element_status(EID, status), IsInSelectType(E_type), neg = "False", status = "unchecked".
+    
+
+real_choice(P) :- 
+    (real_choice_1(P, _); real_choice_2(_, P, _); real_choice_3(_, P, _); real_choice_4(_, P, _); real_choice_5(_,P)), P!="None".
+
+real_choice(P) :-
+    cluster_purposes(_, _, P), countUniqueCluster(1).
+
+.decl real_choice_cluster(C:symbol)
+real_choice_cluster(C) :-
+    cluster_purposes(_, C, P), real_choice(P);
+    cluster_purposes(_, C, P), !countUniqueCluster(1).
+
+
+real_choice_violation(P) :-
+    crt_sent_purpose(_, P), !real_choice(P);
+    cluster_purposes(_, _, P), !countUniqueCluster(1), !real_choice(P).
+
+.decl real_choice_cluster_violation(C:symbol)
+real_choice_cluster_violation(C) :-
+    !real_choice_cluster(C), cluster_purposes(_, C, _).
+
+.output real_choice(IO=stdout)
+.output countUniqueCluster(IO=stdout)
+.output cluster_purposes(IO=stdout)
+.output real_choice_cluster_violation(IO=stdout)
+
+.decl no_real_choice(flag:symbol)
+no_real_choice("True") :-
+    ! real_choice(_).
+
+separate_consent(P, EID) :-
+    (real_choice_1(P, EID) ; real_choice_2(sent_id, P, EID) ; real_choice_3(sent_id, P, EID) ; real_choice_4(sent_id, P, EID)), 
+    single_cluster_element(EID).
+
+.decl separate_EID_consent_violation(EID:symbol)
+separate_EID_consent_violation(EID) :- element_cluster_count(EID, Count), Count > 1.
+
+
+
+
+withdraw_available(withdraw_cnt) :- countCrt(crt_no), crt_no>0, countWithdraw(withdraw_cnt), withdraw_cnt>0.
+
+.decl withdraw_available_violation(flag:symbol)
+withdraw_available_violation("True") :- countWithdraw(withdraw_cnt), withdraw_cnt = 0.
+
+
+withdraw_method_available("True") :-
+    withdraw(_,action), action != "unknown".
+
+specify_cid(controller,PII) :- 
+    collect(controller, PII), controller != "None"; 
+    collect(controller, X), subsume(X, PII), controller!="None".
+    
+specify_cid_1(PII):- countTextbox(1), element(_, "textbox", PII). 
+
+
+
+specify_cid_global(controller) :- 
+    crt(_, controller, _, _, _, _), controller!="None".
+
+.decl data_controller(controller:symbol)
+specify_cid_global(controller) :- data_controller(controller).
+
+specify_purpose(PII) :-
+    purpose(PII, pur), pur!="None";
+    purpose(X, pur), subsume(X, PII), pur!="None".
+
+.decl purposes(purpose:symbol)
+specify_purpose(purpose) :-
+    crt_purpose(_, _, purpose), purpose!="None", purpose!=""; real_choice(purpose);
+    purposes(purpose).
+
+
+
+//.output specify_purpose(IO=stdout)
+
+//ambiguous(ID) :- 
+//    real_choice_3(ID, _, EID), 
+//   crt_neg(ID, "False"), 
+//    eid_sent_id(EID, _, ID),
+//    element_status(EID, "checked").
+
+//ambiguous(ID) :- 
+//    real_choice_2(ID, _, EID), 
+//    crt_neg(ID, "False"), 
+//    eid_sent_id(EID, _, ID),
+//    element_status(EID, "checked").
+
+ambiguous(ID) :- 
+    real_choice_3(ID, _, EID), 
+    crt_neg(ID, "True"), 
+    eid_sent_id(EID, _, ID),
+    element_status(EID, "unchecked"),
+    element(EID, type, _), type != "radio".
+
+ambiguous(ID) :- 
+    real_choice_2(ID, _, EID), 
+    crt_neg(ID, "True"), 
+    eid_sent_id(EID, _, ID),
+    element_status(EID, "unchecked"),
+    element(EID, type, _), type != "radio".
+
+.decl pre_selected(EID:symbol)
+pre_selected(EID) :- real_choice_2(ID, _, EID),
+    element_status(EID, "checked"), element(EID, type, _), type != "radio".
+
+pre_selected(EID) :- real_choice_3(ID, _, EID), element_status(EID, "checked"), element(EID, type, _), type != "radio".
+
+.decl freely_given_violation(flag:symbol)
+freely_given_violation("True") :-
+    countCrt(crt_no), crt_no = 0.
+    
+//.output real_choice_1(IO=stdout)
+//.output real_choice_2(IO=stdout)
+//.output real_choice_3(IO=stdout)
+//.output real_choice_4(IO=stdout)
+//.output real_choice_5(IO=stdout)
+
+//.output real_choice_violation(IO=stdout)
+
+//.output separate_consent(IO=stdout)
+//.output separate_EID_consent_violation(IO=stdout)
+//.output withdraw_available_violation(IO=stdout)
+//.output withdraw_method_available(IO=stdout)
+//.output specify_cid_global(IO=stdout)
+//.output specify_purpose(IO=stdout)
+//.output ambiguous(IO=stdout)
+//.output freely_given_violation(IO=stdout)
+
+
+.output real_choice_1(filename="real_choice_1.csv", headers=true)
+.output real_choice_2(filename="real_choice_2.csv", headers=true)
+.output real_choice_3(filename="real_choice_3.csv", headers=true)
+.output real_choice_4(filename="real_choice_4.csv", headers=true)
+.output real_choice_5(filename="real_choice_5.csv", headers=true)
+.output no_real_choice(filename="no_real_choice.csv", headers=true)
+.output real_choice_violation(filename="real_choice_violation.csv", headers=true)
+.output separate_EID_consent_violation(filename="separate_EID_consent_violation.csv", headers=true)
+.output withdraw_available_violation(filename="withdraw_available_violation.csv", headers=true)
+.output withdraw_method_available(filename="withdraw_method_available.csv", headers=true)
+.output specify_cid_global(filename="specify_cid_global.csv", headers=true)
+.output specify_purpose(filename="specify_purpose.csv", headers=true)
+.output ambiguous(filename="ambiguous.csv", headers=true)
+.output freely_given_violation(filename="freely_given_violation.csv", headers=true)
+.output pre_selected(filename="pre_selected.csv", headers=true)
+.output real_choice_cluster_violation(filename="real_choice_cluster_violation.csv", headers=true)
+

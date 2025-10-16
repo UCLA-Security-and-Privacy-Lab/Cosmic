@@ -1,0 +1,86 @@
+.decl sp_pair(sent_id: symbol, parent_purpose: symbol)
+sp_pair(S, P) :- crt_purpose(S, P, _).
+
+.decl eid_purpose_pair(EID:symbol, purpose:symbol)
+eid_purpose_pair(EID, P) :- real_choice_2(_, P, EID); real_choice_3(_, P, EID); real_choice_4(_, P, EID); real_choice_1(P, EID).
+
+.decl purpose_count(sent_id: symbol, parent_purpose: symbol, Count: number)
+purpose_count(S, P, C) :-
+    sp_pair(S, P),
+    C = count : { crt_purpose(S, P, _) }.
+
+.decl EID_purpose_count(EID:symbol, purpose:symbol, Count:number)
+EID_purpose_count(EID, P, C) :-
+    eid_purpose_pair(EID, P),
+    C = count : { eid_purpose_pair(EID, _) }.
+
+unique_purpose(S, P) :-
+    crt_purpose(S, P, _),
+    purpose_count(S, P, 1).
+
+
+
+countUniquePurpose(Count) :- Count = count : { uniquePurpose(_) }.
+
+uniquePurpose(P) :- 
+    crt(S, _, _, P, _, _),
+    unique_purpose(S,P).
+
+
+
+textbox(EID) :- element(EID, "textbox", _).
+countTextbox(Count) :- Count = count : { textbox(_) }.
+
+button(EID) :- element(EID, "button", _).
+countButton(Count) :- Count = count : { button(_) }.
+
+checkbox(EID) :- element(EID, "checkbox", _).
+countCheckbox(Count) :- Count = count : { checkbox(_) }.
+
+suboperation(A, B):-
+    suboperation(A, C),
+    suboperation(C, B).
+
+suboperation(A, B):-
+    countButton(1), 
+    element(_, "button", A), 
+    suboperation("submit", B).
+
+countCrt(Count) :- Count = count : {crt(_,_,_,_,_,_)}.
+countWithdraw(Count) :- Count = count : {withdraw(_,_)}.
+IsInSet(e) :- Set(e).
+IsInSelectType(e) :- SelectType(e).
+
+
+.decl element_cluster(EID:symbol, cluster:symbol)
+element_cluster(EID, Cluster) :- 
+    (real_choice_1(P, EID) ; real_choice_2(sent_id, P, EID) ; real_choice_3(sent_id, P, EID) ; real_choice_4(sent_id, P, EID)),
+    cluster_purposes(_, Cluster, P).
+
+
+.decl element_cluster_count(EID:symbol, Count:number)
+element_cluster_count(EID, Count) :-
+    element_cluster(EID, _),
+    Count = count : { element_cluster(EID, Cluster), element(EID, type, _), type != "radio" }.
+
+
+.decl single_cluster_element(EID:symbol)
+single_cluster_element(EID) :-
+    element_cluster_count(EID, Count),
+    Count = 1.
+
+.decl cluster_purpose_count(Cluster:symbol, Count:number)
+cluster_purpose_count(Cluster, Count) :-
+    cluster_purposes(_, Cluster, _),
+    Count = count : { cluster_purposes(_, Cluster, _) }.
+
+
+.decl uniqueCluster(Cluster:symbol)
+uniqueCluster(Cluster) :-
+    cluster_purposes(_, Cluster, _).
+
+.decl countUniqueCluster(Count:number)
+countUniqueCluster(Count) :-
+    Count = count : { uniqueCluster(_) }.
+
+

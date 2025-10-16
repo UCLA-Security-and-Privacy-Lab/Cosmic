@@ -1,0 +1,12 @@
+.input crt
+.input element_icon
+.input element
+.input element_required
+.input element_status
+.input eid_sent_id
+.input action_element
+.input cluster_purposes
+.input withdraw
+.input withdraw_method
+.input data_controller
+.input purposes

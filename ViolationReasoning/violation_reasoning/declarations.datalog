@@ -1,0 +1,74 @@
+.decl crt(sent_id:symbol, controller:symbol, action:symbol, purpose:symbol, neg:symbol, element_type:symbol)
+.decl element(element_id:symbol, element_type:symbol, element_text:symbol)
+.decl element_required(element_id:symbol, element_required:symbol)
+.decl element_status(element_id:symbol, element_status:symbol)
+.decl element_icon(element_id:symbol,icon_text:symbol)
+
+.decl crt_sent_purpose(sent_id:symbol, purpose:symbol)
+.decl crt_controller(sent_id:symbol, controller:symbol)
+.decl crt_action(sent_id:symbol, action:symbol)
+.decl crt_neg(sent_id:symbol, neg:symbol)
+.decl crt_element_type(sent_id:symbol, element_type:symbol)
+.decl eid_sent_id(EID:symbol, sent:symbol, sent_id:symbol)
+.decl action_element(sent_id:symbol, action:symbol, element_id:symbol)
+.decl cluster_purposes(sent_id:symbol, cluster:symbol, purpose:symbol)
+
+.decl suboperation(suboperation: symbol, operation: symbol)
+.decl sent(sent_id: symbol, text: symbol)
+
+.decl withdraw(sent_id:symbol, text: symbol)
+.decl withdraw_method(sent_id:symbol, withdraw_method: symbol)
+
+.decl crt_purpose(sent_id:symbol, parent_purpose:symbol, purpose:symbol)
+.decl collect(controller: symbol, PII: symbol)
+.decl subsume(obj_a: symbol, obj_b: symbol)
+.decl specify_cid(controller:symbol, PII: symbol)
+.decl specify_cid_global(controller:symbol)
+.decl specify_purpose(PII: symbol)
+.decl purpose(PII:symbol, purpose:symbol)
+
+
+.decl ambiguous(sent_id:symbol)
+
+
+//.decl similarity(purpose1:symbol, purpose2:symbol, similarity_value:float)
+
+.decl unique_purpose(sent_id: symbol, parent_purpose: symbol)
+.decl uniquePurpose(Purpose: symbol)
+.decl countUniquePurpose(Count: number)
+
+.decl textbox(EID: symbol)
+.decl countTextbox(Count: number)
+
+.decl button(EID: symbol)
+.decl countButton(Count: number)
+
+.decl checkbox(EID: symbol)
+.decl countCheckbox(Count: number)
+
+//.decl equivalence(A:symbol, B:symbol)
+.decl Set(elem: symbol)
+.decl SelectType(elem: symbol)
+.decl IsInSet(x: symbol)
+.decl IsInSelectType(x: symbol)
+
+.decl countCrt(Count: number)
+.decl countWithdraw(Count: number)
+
+
+.decl real_choice_1(purpose:symbol, EID:symbol)
+.decl real_choice_2(ID:symbol, purpose:symbol, EID:symbol)
+.decl real_choice_3(ID:symbol, purpose:symbol, EID:symbol)
+.decl real_choice_4(ID:symbol, purpose:symbol, EID:symbol)
+
+.decl real_choice(Purpose: symbol)
+.decl real_choice_violation(Purpose: symbol)
+.decl separate_consent(purpose: symbol, EID: symbol)
+
+//.decl separate_consent_compliance_violation(EID:symbol, purpose1:symbol, purpose2:symbol)
+
+
+.decl withdraw_available(Count: number)
+.decl withdraw_method_available(flag: symbol)
+
+.decl specify_cid_1(PII:symbol)

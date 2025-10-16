@@ -1,0 +1,74 @@
+# Large files that exceed GitHub limits
+PP_analysis/webdriver/firefox/
+PP_analysis/webdriver/firefox.tar.bz2
+PP_analysis/consent_identification/chroma/
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Data files
+*.pkl
+*.pickle
+*.json
+*.csv
+*.xlsx
+
+# Images (except small ones)
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.tiff
+
+# Large binary files
+*.bin
+*.so
+*.dll
+*.exe
+
+# Model files
+*.model
+*.pth
+*.pt
+*.h5
+*.ckpt
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Archive files
+*.tar
+*.tar.gz
+*.zip
+*.rar
+*.7z

@@ -1,0 +1,38 @@
+suboperation("submit form", "sign up").
+suboperation("submit", "submit form").
+suboperation("register", "continue").
+suboperation("submit", "submit form").
+suboperation("submit", "submit the form").
+suboperation("submit", "submit this form").
+
+
+
+Set("continue").
+Set("fill form").
+Set("submit form").
+Set("register").
+Set("fill out form").
+Set("sign up").
+Set("submit the form").
+
+
+SelectType("checkbox").
+SelectType("option").
+SelectType("toggle").
+SelectType("radio").
+
+
+crt_sent_purpose(sent_id, purpose):-
+    crt(sent_id, _, _, purpose, _, _).
+
+crt_controller(sent_id, controller):-
+    crt(sent_id, controller, _, _, _, _).
+
+crt_action(sent_id, action):-
+    crt(sent_id, _, action, _, _, _).
+
+crt_neg(sent_id, neg):-
+    crt(sent_id, _, _, _, neg, _).
+
+crt_element_type(sent_id, element_type):-
+    crt(sent_id, _, _, _, _, element_type).

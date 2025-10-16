@@ -1,0 +1,343 @@
+Tab 0 (current): About our Advertising - ESL FACEIT Group
+
+[4] RootWebArea 'About our Advertising - ESL FACEIT Group' focused: True
+	[7] link 'Skip to content'
+	[50] link ''
+		[1437] image ''
+	[66] link 'WHO WE ARE' hasPopup: menu expanded: False controls: sm-17191981009480146-2
+	[69] link 'BRANDS' hasPopup: menu expanded: False controls: sm-17191981009480146-4
+	[72] link 'PARTNERS'
+	[74] link 'AD SOLUTIONS' hasPopup: menu expanded: False controls: sm-17191981009480146-6
+	[77] link 'CAREER'
+	[79] link 'PRESS'
+	[9] main ''
+		[22] heading 'ADVERTISING AT EFG BRANDS'
+		[25] heading 'REACH BEYOND GAMEPLAY!'
+		[29] link "LET'S CHAT"
+		[40] Iframe 'youtube Video Player'
+		[516] button 'Video play button'
+			[517] image 'Play Video'
+		[520] StaticText 'Our passionate audience digitally engage with our brands as part of their gaming way of life.'
+		[521] StaticText 'A unique digital footprint built around our digital platforms, competitions and gaming festivals, across multiple highly engaging digital touchpoints.'
+		[426] heading 'AUDIENCE'
+		[522] StaticText 'They come to EFG to:'
+		[446] StaticText 'P'
+		[447] StaticText 'L'
+		[448] StaticText 'A'
+		[449] StaticText 'Y'
+		[2547] StaticText '|'
+		[348] heading 'ADVERTISING PRODUCTS'
+		[527] StaticText 'EFG offers premium advertising products and an incredible reach among an emerging audience and market.'
+		[360] StaticText 'To effectively reach and engage with our users, we need to follow them wherever they go digitally across our brands. This includes our platform, social media channels, and broadcasts or VOD content. We also need to target gamers and esports fanatics at the right time, with the right message, in the right environment, and when they are most engaged. By doing so, we can create a seamless user experience that captures their attention and keeps them coming back for more.'
+		[367] StaticText 'Reaching Gamers and Esports Fanatics at:'
+		[1956] ListMarker '• '
+		[1957] ListMarker '• '
+		[377] StaticText 'with the right messagein the'
+		[1958] ListMarker '• '
+		[380] StaticText 'right environment'
+		[1959] ListMarker '• '
+		[382] StaticText 'at their most engaged'
+		[384] heading 'Learn more about advertising at...'
+		[285] heading 'WANT TO ADVERTISE ON EFG? LET’S CHAT!'
+		[529] StaticText '* indicates required'
+		[306] StaticText 'FIRST NAME *'
+		[305] textbox 'FIRST NAME *' required: True
+		[310] StaticText 'LAST NAME *'
+		[309] textbox 'LAST NAME *' required: True
+		[314] StaticText 'EMAIL *'
+		[313] textbox 'EMAIL *' required: True
+		[318] StaticText 'COMPANY *'
+		[317] textbox 'COMPANY *' required: True
+		[322] StaticText 'CITY *'
+		[321] textbox 'CITY *' required: True
+		[326] StaticText 'COUNTRY'
+		[325] combobox 'COUNTRY' hasPopup: menu expanded: False
+			[965] menuitem '--None--' selected: True
+			[966] menuitem 'Afghanistan' selected: False
+			[967] menuitem 'Albania' selected: False
+			[968] menuitem 'Algeria' selected: False
+			[969] menuitem 'American Samoa' selected: False
+			[970] menuitem 'Andorra' selected: False
+			[971] menuitem 'Angola' selected: False
+			[972] menuitem 'Anguilla' selected: False
+			[973] menuitem 'Antarctica' selected: False
+			[974] menuitem 'Antigua and Barbuda' selected: False
+			[975] menuitem 'Argentina' selected: False
+			[976] menuitem 'Armenia' selected: False
+			[977] menuitem 'Aruba' selected: False
+			[978] menuitem 'Australia' selected: False
+			[979] menuitem 'Austria' selected: False
+			[980] menuitem 'Azerbaijan' selected: False
+			[981] menuitem 'Bahamas' selected: False
+			[982] menuitem 'Bahrain' selected: False
+			[983] menuitem 'Bangladesh' selected: False
+			[984] menuitem 'Barbados' selected: False
+			[985] menuitem 'Belarus' selected: False
+			[986] menuitem 'Belgium' selected: False
+			[987] menuitem 'Belize' selected: False
+			[988] menuitem 'Benin' selected: False
+			[989] menuitem 'Bermuda' selected: False
+			[990] menuitem 'Bhutan' selected: False
+			[991] menuitem 'Bolivia, Plurinational State of' selected: False
+			[992] menuitem 'Bonaire, Sint Eustatius and Saba' selected: False
+			[993] menuitem 'Bosnia and Herzegovina' selected: False
+			[994] menuitem 'Botswana' selected: False
+			[995] menuitem 'Bouvet Island' selected: False
+			[996] menuitem 'Brazil' selected: False
+			[997] menuitem 'British Indian Ocean Territory' selected: False
+			[998] menuitem 'Brunei Darussalam' selected: False
+			[999] menuitem 'Bulgaria' selected: False
+			[1000] menuitem 'Burkina Faso' selected: False
+			[1001] menuitem 'Burundi' selected: False
+			[1002] menuitem 'Cambodia' selected: False
+			[1003] menuitem 'Cameroon' selected: False
+			[1004] menuitem 'Canada' selected: False
+			[1005] menuitem 'Cape Verde' selected: False
+			[1006] menuitem 'Cayman Islands' selected: False
+			[1007] menuitem 'Central African Republic' selected: False
+			[1008] menuitem 'Chad' selected: False
+			[1009] menuitem 'Chile' selected: False
+			[1010] menuitem 'China' selected: False
+			[1011] menuitem 'Christmas Island' selected: False
+			[1012] menuitem 'Cocos (Keeling) Islands' selected: False
+			[1013] menuitem 'Colombia' selected: False
+			[1014] menuitem 'Comoros' selected: False
+			[1015] menuitem 'Congo' selected: False
+			[1016] menuitem 'Congo, the Democratic Republic of the' selected: False
+			[1017] menuitem 'Cook Islands' selected: False
+			[1018] menuitem 'Costa Rica' selected: False
+			[1019] menuitem "Cote d'Ivoire" selected: False
+			[1020] menuitem 'Croatia' selected: False
+			[1021] menuitem 'Cuba' selected: False
+			[1022] menuitem 'Curacao' selected: False
+			[1023] menuitem 'Cyprus' selected: False
+			[1024] menuitem 'Czech Republic' selected: False
+			[1025] menuitem 'Denmark' selected: False
+			[1026] menuitem 'Djibouti' selected: False
+			[1027] menuitem 'Dominica' selected: False
+			[1028] menuitem 'Dominican Republic' selected: False
+			[1029] menuitem 'Ecuador' selected: False
+			[1030] menuitem 'Egypt' selected: False
+			[1031] menuitem 'El Salvador' selected: False
+			[1032] menuitem 'Equatorial Guinea' selected: False
+			[1033] menuitem 'Eritrea' selected: False
+			[1034] menuitem 'Estonia' selected: False
+			[1035] menuitem 'Ethiopia' selected: False
+			[1036] menuitem 'Falkland Islands (Malvinas)' selected: False
+			[1037] menuitem 'Faroe Islands' selected: False
+			[1038] menuitem 'Fiji' selected: False
+			[1039] menuitem 'Finland' selected: False
+			[1040] menuitem 'France' selected: False
+			[1041] menuitem 'French Guiana' selected: False
+			[1042] menuitem 'French Polynesia' selected: False
+			[1043] menuitem 'French Southern Territories' selected: False
+			[1044] menuitem 'Gabon' selected: False
+			[1045] menuitem 'Gambia' selected: False
+			[1046] menuitem 'Georgia' selected: False
+			[1047] menuitem 'Germany' selected: False
+			[1048] menuitem 'Ghana' selected: False
+			[1049] menuitem 'Gibraltar' selected: False
+			[1050] menuitem 'Greece' selected: False
+			[1051] menuitem 'Greenland' selected: False
+			[1052] menuitem 'Grenada' selected: False
+			[1053] menuitem 'Guadeloupe' selected: False
+			[1054] menuitem 'Guam' selected: False
+			[1055] menuitem 'Guatemala' selected: False
+			[1056] menuitem 'Guernsey' selected: False
+			[1057] menuitem 'Guinea' selected: False
+			[1058] menuitem 'Guinea-Bissau' selected: False
+			[1059] menuitem 'Guyana' selected: False
+			[1060] menuitem 'Haiti' selected: False
+			[1061] menuitem 'Heard Island and McDonald Islands' selected: False
+			[1062] menuitem 'Holy See (Vatican City State)' selected: False
+			[1063] menuitem 'Honduras' selected: False
+			[1064] menuitem 'Hong Kong' selected: False
+			[1065] menuitem 'Hungary' selected: False
+			[1066] menuitem 'Iceland' selected: False
+			[1067] menuitem 'India' selected: False
+			[1068] menuitem 'Indonesia' selected: False
+			[1069] menuitem 'Iran, Islamic Republic of' selected: False
+			[1070] menuitem 'Iraq' selected: False
+			[1071] menuitem 'Ireland' selected: False
+			[1072] menuitem 'Isle of Man' selected: False
+			[1073] menuitem 'Israel' selected: False
+			[1074] menuitem 'Italy' selected: False
+			[1075] menuitem 'Jamaica' selected: False
+			[1076] menuitem 'Japan' selected: False
+			[1077] menuitem 'Jersey' selected: False
+			[1078] menuitem 'Jordan' selected: False
+			[1079] menuitem 'Kazakhstan' selected: False
+			[1080] menuitem 'Kenya' selected: False
+			[1081] menuitem 'Kiribati' selected: False
+			[1082] menuitem "Korea, Democratic People's Republic of" selected: False
+			[1083] menuitem 'Korea, Republic of' selected: False
+			[1084] menuitem 'Kuwait' selected: False
+			[1085] menuitem 'Kyrgyzstan' selected: False
+			[1086] menuitem "Lao People's Democratic Republic" selected: False
+			[1087] menuitem 'Latvia' selected: False
+			[1088] menuitem 'Lebanon' selected: False
+			[1089] menuitem 'Lesotho' selected: False
+			[1090] menuitem 'Liberia' selected: False
+			[1091] menuitem 'Libya' selected: False
+			[1092] menuitem 'Liechtenstein' selected: False
+			[1093] menuitem 'Lithuania' selected: False
+			[1094] menuitem 'Luxembourg' selected: False
+			[1095] menuitem 'Macao' selected: False
+			[1096] menuitem 'Macedonia, the former Yugoslav Republic of' selected: False
+			[1097] menuitem 'Madagascar' selected: False
+			[1098] menuitem 'Malawi' selected: False
+			[1099] menuitem 'Malaysia' selected: False
+			[1100] menuitem 'Maldives' selected: False
+			[1101] menuitem 'Mali' selected: False
+			[1102] menuitem 'Malta' selected: False
+			[1103] menuitem 'Marshall Islands' selected: False
+			[1104] menuitem 'Martinique' selected: False
+			[1105] menuitem 'Mauritania' selected: False
+			[1106] menuitem 'Mauritius' selected: False
+			[1107] menuitem 'Mayotte' selected: False
+			[1108] menuitem 'Mexico' selected: False
+			[1109] menuitem 'Micronesia, Federated States of' selected: False
+			[1110] menuitem 'Moldova, Republic of' selected: False
+			[1111] menuitem 'Monaco' selected: False
+			[1112] menuitem 'Mongolia' selected: False
+			[1113] menuitem 'Montenegro' selected: False
+			[1114] menuitem 'Montserrat' selected: False
+			[1115] menuitem 'Morocco' selected: False
+			[1116] menuitem 'Mozambique' selected: False
+			[1117] menuitem 'Myanmar' selected: False
+			[1118] menuitem 'Namibia' selected: False
+			[1119] menuitem 'Nauru' selected: False
+			[1120] menuitem 'Nepal' selected: False
+			[1121] menuitem 'Netherlands' selected: False
+			[1122] menuitem 'New Caledonia' selected: False
+			[1123] menuitem 'New Zealand' selected: False
+			[1124] menuitem 'Nicaragua' selected: False
+			[1125] menuitem 'Niger' selected: False
+			[1126] menuitem 'Nigeria' selected: False
+			[1127] menuitem 'Niue' selected: False
+			[1128] menuitem 'Norfolk Island' selected: False
+			[1129] menuitem 'Northern Mariana Islands' selected: False
+			[1130] menuitem 'Norway' selected: False
+			[1131] menuitem 'Oman' selected: False
+			[1132] menuitem 'Pakistan' selected: False
+			[1133] menuitem 'Palau' selected: False
+			[1134] menuitem 'Palestinian Territory, Occupied' selected: False
+			[1135] menuitem 'Panama' selected: False
+			[1136] menuitem 'Papua New Guinea' selected: False
+			[1137] menuitem 'Paraguay' selected: False
+			[1138] menuitem 'Peru' selected: False
+			[1139] menuitem 'Philippines' selected: False
+			[1140] menuitem 'Pitcairn' selected: False
+			[1141] menuitem 'Poland' selected: False
+			[1142] menuitem 'Portugal' selected: False
+			[1143] menuitem 'Puerto Rico' selected: False
+			[1144] menuitem 'Qatar' selected: False
+			[1145] menuitem 'Reunion' selected: False
+			[1146] menuitem 'Romania' selected: False
+			[1147] menuitem 'Russian Federation' selected: False
+			[1148] menuitem 'Rwanda' selected: False
+			[1149] menuitem 'Saint Barthelemy' selected: False
+			[1150] menuitem 'Saint Helena, Ascension and Tristan da Cunha' selected: False
+			[1151] menuitem 'Saint Kitts and Nevis' selected: False
+			[1152] menuitem 'Saint Lucia' selected: False
+			[1153] menuitem 'Saint Martin (French part)' selected: False
+			[1154] menuitem 'Saint Pierre and Miquelon' selected: False
+			[1155] menuitem 'Saint Vincent and the Grenadines' selected: False
+			[1156] menuitem 'Samoa' selected: False
+			[1157] menuitem 'San Marino' selected: False
+			[1158] menuitem 'Sao Tome and Principe' selected: False
+			[1159] menuitem 'Saudi Arabia' selected: False
+			[1160] menuitem 'Senegal' selected: False
+			[1161] menuitem 'Serbia' selected: False
+			[1162] menuitem 'Seychelles' selected: False
+			[1163] menuitem 'Sierra Leone' selected: False
+			[1164] menuitem 'Singapore' selected: False
+			[1165] menuitem 'Sint Maarten (Dutch part)' selected: False
+			[1166] menuitem 'Slovakia' selected: False
+			[1167] menuitem 'Slovenia' selected: False
+			[1168] menuitem 'Solomon Islands' selected: False
+			[1169] menuitem 'Somalia' selected: False
+			[1170] menuitem 'South Africa' selected: False
+			[1171] menuitem 'South Georgia and the South Sandwich Islands' selected: False
+			[1172] menuitem 'South Sudan' selected: False
+			[1173] menuitem 'Spain' selected: False
+			[1174] menuitem 'Sri Lanka' selected: False
+			[1175] menuitem 'Sudan' selected: False
+			[1176] menuitem 'Suriname' selected: False
+			[1177] menuitem 'Svalbard and Jan Mayen' selected: False
+			[1178] menuitem 'Swaziland' selected: False
+			[1179] menuitem 'Sweden' selected: False
+			[1180] menuitem 'Switzerland' selected: False
+			[1181] menuitem 'Syrian Arab Republic' selected: False
+			[1182] menuitem 'Taiwan, Province of China' selected: False
+			[1183] menuitem 'Tajikistan' selected: False
+			[1184] menuitem 'Tanzania, United Republic of' selected: False
+			[1185] menuitem 'Thailand' selected: False
+			[1186] menuitem 'Timor-Leste' selected: False
+			[1187] menuitem 'Togo' selected: False
+			[1188] menuitem 'Tokelau' selected: False
+			[1189] menuitem 'Tonga' selected: False
+			[1190] menuitem 'Trinidad and Tobago' selected: False
+			[1191] menuitem 'Tunisia' selected: False
+			[1192] menuitem 'Turkey' selected: False
+			[1193] menuitem 'Turkmenistan' selected: False
+			[1194] menuitem 'Turks and Caicos Islands' selected: False
+			[1195] menuitem 'Tuvalu' selected: False
+			[1196] menuitem 'Uganda' selected: False
+			[1197] menuitem 'Ukraine' selected: False
+			[1198] menuitem 'United Arab Emirates' selected: False
+			[1199] menuitem 'United Kingdom' selected: False
+			[1200] menuitem 'United States' selected: False
+			[1201] menuitem 'United States Minor Outlying Islands' selected: False
+			[1202] menuitem 'Uruguay' selected: False
+			[1203] menuitem 'Uzbekistan' selected: False
+			[1204] menuitem 'Vanuatu' selected: False
+			[1205] menuitem 'Venezuela, Bolivarian Republic of' selected: False
+			[1206] menuitem 'Viet Nam' selected: False
+			[1207] menuitem 'Virgin Islands, British' selected: False
+			[1208] menuitem 'Virgin Islands, U.S.' selected: False
+			[1209] menuitem 'Wallis and Futuna' selected: False
+			[1210] menuitem 'Western Sahara' selected: False
+			[1211] menuitem 'Yemen' selected: False
+			[1212] menuitem 'Zambia' selected: False
+			[1213] menuitem 'Zimbabwe' selected: False
+		[330] StaticText 'DESCRIPTION'
+		[329] textbox '' required: False
+		[1436] IframePresentational 'reCAPTCHA'
+		[303] button 'SUBMIT'
+		[257] link ''
+		[530] StaticText 'is partnering with the ESL FACEIT GROUP'
+		[264] link 'EXPLORE BRAND INTEGRATION'
+	[213] link 'CAREER'
+	[215] link 'PRESS'
+	[217] link 'MEDIA RIGHTS'
+	[219] link 'BRAND PORTAL'
+	[233] link 'Imprint'
+	[234] link 'Privacy Policy'
+	[235] link 'Cookie Policy'
+	[236] link 'Terms of Use'
+	[237] link '\xa0Copyright Policy'
+	[238] link 'Procurement Policy'
+	[239] link 'Security & Disclosure'
+	[243] heading '© 2024 ESL FACEIT GROUP'
+	[1682] StaticText 'desktop'
+	[2065] button 'Open Privacy settings'
+	[2073] dialog 'Privacy Settings' focused: True modal: True
+		[2080] button 'Continue without accepting'
+		[2093] generic 'Select language Privacy Settings When you use our services, we or also third parties process certain personal data of yours through cookies and similar technologies ("Cookies "). Some of these are essential for our services to work (Essential Cookies). Performance Cookies are used to measure/optimize the content and performance of our services, and Marketing Cookies help us personalize/market our services and display relevant ads. You can find out more about the Cookies under “Details & Customization” and choose which specific Functional and Marketing Cookies you consent for us to use. You can choose whether we use all or none of the Functional and Marketing Cookies by clicking either "Accept All" or "Don\'t Accept All". You can at any time withdraw your consent in the Privacy Settings menu (fingerprint button). The withdrawal of your consent does not affect the lawfulness of our use of your data before your withdrawal.'
+			[2103] button 'Select language' hasPopup: listbox describedby: language-tooltip-id
+				[2105] image ''
+			[2115] heading 'Privacy Settings'
+			[2174] StaticText 'When you use our services, we or also third parties process certain personal data of yours through cookies and similar technologies ("Cookies "). Some of these are essential for our services to work (Essential Cookies). Performance Cookies are used to measure/optimize the content and performance of our services, and Marketing Cookies help us personalize/market our services and display relevant ads. You can find out more about the Cookies under “Details & Customization” and choose which specific Functional and Marketing Cookies you consent for us to use. You can choose whether we use all or none of the Functional and Marketing Cookies by clicking either "Accept All" or "Don\'t Accept All". You can at any time withdraw your consent in the Privacy Settings menu (fingerprint button). The withdrawal of your consent does not affect the lawfulness of our use of your data before your withdrawal.'
+		[2124] switch 'Marketing' checked: false
+		[2135] switch 'Performance' checked: false
+		[2146] switch 'Essential' disabled: True checked: true
+		[2162] link 'Open Privacy Policy'
+		[2163] link 'Open Imprint'
+		[2164] StaticText 'Powered by'
+		[2165] StaticText '\xa0'
+		[2166] link 'Usercentrics Consent Management'
+		[2168] button 'More Information'
+		[2169] button 'Save Choices'
+		[2170] button 'Reject All'
+		[2171] button 'Accept All'
